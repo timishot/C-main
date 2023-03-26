@@ -20,6 +20,7 @@ int main(){
 	ptr2->data=3;
 	ptr2->link=NULL;
 
+
 	ptr->link=ptr2;
 
 	head->link=ptr;
@@ -38,12 +39,18 @@ struct node *del_first(struct node *head)
 {
 	if(head==NULL)
 		printf("List is already empty!");
-	else
+	else if(head->link ==NULL)
 	{
-		struct node *temp = head;
-		head = head->link;
-		free(temp);
-		temp = NULL;
+		free(head);
+		head = NULL;
 	}
+	else{
+		struct node *temp = head;
+		while(temp->link->link!=NULL)
+			temp = temp->link;
+		free(temp->link);
+		temp->link = NULL;
+	}
+
 	return head;
 };
