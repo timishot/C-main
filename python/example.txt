@@ -1,0 +1,7 @@
+This is an example of a file containing doctests.
+
+>>> 2 + 2
+4
+
+>>> "hello".upper()
+"HELLo"
