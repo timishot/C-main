@@ -1,4 +1,4 @@
-package com.AliBadran;
+import com.AliBadran.AliBadran;
 
 public class Main{
 
