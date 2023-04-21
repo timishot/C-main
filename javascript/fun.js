@@ -9,3 +9,18 @@ var sayBye = function(){
 }
 
 sayBye();
+
+function sing(){
+	console.log("AHHHHHHHH");
+	console.log("TEEEEEEEEEE");
+}
+
+sing();
+
+function sing2(){
+	console.log("Laaaaa deeee daaaa");
+	console.log("Laaaaa");
+}
+
+
+sing2();
