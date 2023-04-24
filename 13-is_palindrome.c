@@ -36,8 +36,19 @@ int is_palindrome(listint_t **head)
 	}
 
 	second_half = slow_ptr;
-	prev_slow_ptr_>next =NULL;
+	prev_slow_ptr_>next =NULL; /*terminate first half*/
 
+	while(second_half !=NULL)/*reverse second half*/
+	{
+		prev = second_half->next;
+		second_half->next = slow;
+		slow = second_half;
+		second_half=prev;
 
+	}
 
+	second_half=slow;/*reset second half*/
 
+	while(second_half!=NULL)
+	{
+		if(*head)->n
