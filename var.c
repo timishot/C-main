@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 int add(int count, ...);
 
@@ -12,7 +13,7 @@ int add(int count, ...){
 	va_list args;
 	int sum = 0;
 	va_start(args, count);
-	for (int i=0; i<count)
+	for (int i=0; i<count; i++)
 		sum += va_arg(args, int);
 	va_end(args);
 	return sum;
