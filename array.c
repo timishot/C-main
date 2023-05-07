@@ -3,7 +3,7 @@
 int add_at_end(int a[], int b[], int n, int freepos, int data);
 int main(void)
 {
-	int a[3];
+	int a[3];//aarray
 	int i, n, freepos;
 	printf("Enter the number of elements: ");
 	scanf("%d", &n);
