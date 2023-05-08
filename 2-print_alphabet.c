@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(i);
+		putchar(i);//print alphabet one at a time
 	}
 	putchar('\n');
 	return (0);
