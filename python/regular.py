@@ -13,3 +13,10 @@ mo2 = batRegex.search('The Adentures of Batwoman')
 mo2.group()
 print(mo2.group())
 
+batRegex = re.compile(r'Bat(wo)*man')
+mo3 = batRegex.search('The Adventures of Batwowowowoman')
+print(mo3.group())
+
+
+
+
