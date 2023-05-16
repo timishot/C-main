@@ -17,6 +17,9 @@ batRegex = re.compile(r'Bat(wo)*man')
 mo3 = batRegex.search('The Adventures of Batwowowowoman')
 print(mo3.group())
 
-
+batReget = re.compile(r'Bat(wo)+man')
+mo4= batRegex.search('The Adventuresof Batwowowowoman')
+print(mo4.group())
+print(mo4==None)
 
 
