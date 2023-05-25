@@ -40,6 +40,7 @@ typedef struct listint_s
 } listint_t;
 
 void free_listint2(listint_t **head);
+int pop_listint(listint_t **head);
 void free_listint(listint_t *head);
 void free_list(list_t *head);
 size_t print_list(const list_t *h);
