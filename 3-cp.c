@@ -20,9 +20,9 @@ int cp(const char *file_from, const char *file_to)
 		return 98;
 	}
 
-	fd_to = open(file_to, O_WRONLY|O_CREAT|O_TRUNC, 0664);
+	fd_to = open(file_to, O_WRONLY|O_CREAT|O_TRUNC, 066i4);
 	if (fd_to == -1){
-		print_error("Can'twrite to file", file_to);
+		print_error("Can' write to file", file_to);
 		close(fd_from);
 		return 99;
 	}
