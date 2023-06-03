@@ -35,7 +35,7 @@ class SinglyLinkedList:
     def __init__(self):
         self.__head = None
 
-    def sort_insert(self, value):
+    def sorted_insert(self, value):
         new_node = Node(value)
 
 
@@ -45,16 +45,16 @@ class SinglyLinkedList:
         else:
             current = self.__head
             while current.next_node is not None and current.next_node.data < value:
-                curent = current.next.node
-            new_node.next_node = currenr.next_node
-            currenr.next_node = new_node
+                current = current.next_node
+            new_node.next_node = current.next_node
+            current.next_node = new_node
 
     def __str__(self):
         result = ""
-        currenr = self.__head
+        current = self.__head
         while current is not None:
             result += str(current.data) +"\n"
-            current = current.next.next_node
+            current = current.next_node
         return result
 
 
