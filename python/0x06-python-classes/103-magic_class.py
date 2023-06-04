@@ -21,9 +21,10 @@ class MagicClass:
         return 2 * pi * self.__radius **2
 
     def __str__(self):
-        return f"MagicClass: radius={}"
+        return f"MagicClass: radius={self.__radius}"
 
 mg = MagicClass(2)
-print(mg)
+print(mg.circumference())
+print(repr(mg))
 
 
