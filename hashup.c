@@ -67,3 +67,30 @@ void print_table(HashTable* table)
 	printf("------------------\n\n");
 }
 
+void ht_insert(HashTable* table, char *key, char* value)
+{
+
+	//create the item.
+	Ht_item* item = create_item(key, value);
+
+	int index = hash_function(key);
+
+	ht_item* current_item = table->items[index];
+
+	if (current_item == NULL)
+	{
+		//key does not exist
+		if (table->count == table->size)
+		{
+			// HashTable is full
+			printf("Insert Error: Hash Table is full\n");
+			free_item(item);
+			return;
+		}
+
+		//insert directtly
+		table->items[index] = item;
+		table->count++;
+
+	}
+
