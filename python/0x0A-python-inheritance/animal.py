@@ -72,5 +72,5 @@ def main():
     animal1 = Animal("born alive")
     
     print(animal1.birthType)
-
+    print(animal1)
 main()
