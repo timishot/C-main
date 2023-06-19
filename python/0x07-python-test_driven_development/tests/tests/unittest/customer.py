@@ -20,6 +20,7 @@ class Customer:
 
     def apply_discount(self):
         self.purchase = int(self.purchase * self.discount)
+        return self.purchase
 
 
 
