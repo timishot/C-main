@@ -8,6 +8,11 @@ def print_square(size):
     if not isinstance(size, float) and size < 0:
         raise TypeError("sizemust be an integer")
 
-    for i in range(len(size)):
-        for j in i:
+    for i in range(size):
+        print("#"*size)
+
+
+if __name__ == "__main__":
+    print_square(5)
+
 

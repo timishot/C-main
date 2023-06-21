@@ -1,0 +1,25 @@
+============================================
+creating newline when at the end of sentence
+
+
+ARG:
+	text: the text to be checked
+
+Returns:
+	create a text indentation
+
+Raise:
+	TypeError: text must be string
+
+Examples
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Hello. How are you? I'm good.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm good.
+>>> text_indentation("This is a test: texting 1, 2, 3.")
+This is a test:
+<BLANKLINE>
+texting 1, 2, 3.

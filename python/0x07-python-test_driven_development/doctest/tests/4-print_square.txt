@@ -1,0 +1,33 @@
+================================================
+create a test to print a square
+
+Args:
+	size: it is use t0 determine the width and the height of the square
+
+Returns:
+	"#" it print a squre by using the (size) to print the width and height
+
+Raises:
+	TypeError: size must be an integer
+	ValueError: size must be >= 0
+	TypeError: size must be an integer 
+
+Examples:
+
+>>> print_square = __import__('4-print_square').print_square
+>>> print_square(4)
+####
+####
+####
+####
+
+
+>>> print_square("a")
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+
+>>> print_square(-5)
+Traceback (most recent call last):
+	...
+ValueError: size must be >= 0
