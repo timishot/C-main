@@ -1,0 +1,30 @@
+========================================
+Print the givin first name and last name
+
+Args:
+	fist_name (str): The first name.
+	last_name (str, optional): the last name. Defaults to "".
+
+
+Raises:
+	TypeError: if either first_name or last_name is not a string.
+
+Examples:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("John", "Doe")
+my name is John Doe
+
+>>> say_my_name("Alice")
+my name is Alice 
+
+>>> say_my_name(123, "Smith")
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+
+>>> say_my_name("Bob", 456)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+
+
