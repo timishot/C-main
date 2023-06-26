@@ -14,6 +14,8 @@ void insertion_sort(int array[], int size)
 			j = j - 1;
 		}
 
+		array[j + 1] = key;
+
 		/*Print the array after each iteration (optional)*/
 		for (int k = 0; k < size; k++){
 			printf("%d ", array[k]);
