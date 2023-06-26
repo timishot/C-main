@@ -13,6 +13,7 @@ struct node{
 struct node* addAtBeg(struct node* head, int data);
 struct node* addToEmpty(struct node* head, int data);
 struct node* addAtEnd(struct node* head, int data);
+struct node* addAfterPos(struct node* head, int data, int position);
 
 #endif
 
