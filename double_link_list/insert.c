@@ -1,14 +1,24 @@
 #include <stdio.h>
 #include "double.h"
 
-struct node* add_beg(struct node* head, int d)
-{
-	struct node *ptr = malloc(sizeof(struct node));
-	ptr->data = d;
-	ptr->link =NULL;
+/**
+ * addAtBeg - a function for add a node in the beginning of node
+ * @head: the head node
+ * @data: the data stored in the node
+ * Return: head
+ */
 
-	ptr->link =head;
-	head = ptr;
-	return head;
-};
+struct node  *addAtBeg(struct node *head, int data)
+{
+	struct node *temp = malloc(sizeof(struct node));
+
+	temp->prev = NULL;
+	temp->data = data;
+	temp->next = NULL;
+	temp->next = head;
+	head->prev = temp;
+	head = temp;
+
+	return (head);
+}
 

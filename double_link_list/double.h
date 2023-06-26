@@ -10,9 +10,9 @@ struct node{
 	struct node *next;
 };
 
-struct node* add_beg(struct node* head, int d);
-
+struct node* addAtBeg(struct node* head, int data);
 struct node* addToEmpty(struct node* head, int data);
+struct node* addAtEnd(struct node* head, int data);
 
 #endif
 
