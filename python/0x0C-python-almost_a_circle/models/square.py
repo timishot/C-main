@@ -50,6 +50,13 @@ class Square(Rectangle):
                 elif key == "y":
                     self.y = value
 
+    def to_dictionary(self):
+        return {"id": self.id,
+                "x": self.x,
+               " size": self.size,
+                "y": self.y
+                }
+
 
     def __str__(self):
         return "[square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
