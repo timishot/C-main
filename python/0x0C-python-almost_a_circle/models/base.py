@@ -46,6 +46,20 @@ class Base:
             return new
 
 
+    @classmethod
+    def load_from_file(cls):
+        filename = str(cls.__name__) + ".json"
+        try:
+            with open(filename, "r", encoding = "utf-8") as jsonfile:
+                json_data = jsonfile.read()
+                data = cls.from_json_string(json_data)
+                instance = [cls.create(**a)  for a in data]
+                return instance
+        except FileNotFoundError:
+            return []
+
+
+
 
 
 
