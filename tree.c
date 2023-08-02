@@ -25,11 +25,46 @@ struct node *create()
 	return new_node;
 };
 
+void preorder(struct node *root)
+{
+        if (root == 0)
+                return;
+        printf("%d\n", root->data);
+        preorder(root->left);
+        preorder(root->right);
+}
+
+void inorder(struct node *root)
+{
+	if (root == 0)
+		return;
+	inorder(root->left);
+	printf("%d\n", root->data);
+	inorder(root->right);
+}
+
+void postorder(struct node *root)
+{
+	if (root == 0)
+		return;
+	postorder(root->left);
+	postorder(root->right);
+	printf("%d\n", root->data);
+}
+
+
+
 void main()
 {
 	struct node * root;
 	root = NULL;
 	root = create();
+	printf("preorder tree\n");
+	preorder(root);
+	printf("inorder tree\n");
+	inorder(root);
+	printf("postorder tree\n");
+	postorder(root);
 }
 
 
