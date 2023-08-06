@@ -10,7 +10,7 @@ typedef struct node {
 int main()
 {
 	Node *head = NULL;
-	Node *new_node = malloc(sizeof(Node));
+	Node *new_node = malloc(sizeof(Node)); //Allocated memory for new_node
 
 	if (new_node == NULL) 
 	{
