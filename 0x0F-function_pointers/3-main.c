@@ -13,7 +13,7 @@ int main (int argc, char *argv[])
 
 
 	if (argv[1] != NULL && argv[2] != NULL && argv[3] != NULL){
-		func = get_op_func(argv[2]);
+		func = get_op_func(argv[2]);// dereferencing
 		if (!func){
 			printf("Error\n");
 			exit(98);
