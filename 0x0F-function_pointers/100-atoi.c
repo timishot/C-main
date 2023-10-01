@@ -18,9 +18,9 @@ int _atoi(char *s)
 	}
 
 	/**convert string to integer**/
-	while (*s >= 0 && *s <= 9){
+	while (*s >= '0' && *s <= '9'){
 		/**handle overflow**/
-		if (result > INT_MAX/10){
+		if (result > INT_MAX/10 || (result == INT_MAX / 10 && *s - '0' > INT_MAX % 10)){
 			if (sign == 1)
 				return INT_MAX;
 			else 
