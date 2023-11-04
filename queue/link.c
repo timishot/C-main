@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//QUEUE IMPLEMENTATION USING LINK_LIST
 struct node
 {
 	/* data */

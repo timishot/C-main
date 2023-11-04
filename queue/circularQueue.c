@@ -4,7 +4,7 @@
 int queue[N];
 int front = -1;
 int rear = -1;
-
+//CIRCULAR QUEUE IMPLEMENTATION USING ARRAYS
  void enqueue(int x){
 	if (front == -1 && rear == -1){
 		front = rear = 0;
@@ -28,5 +28,23 @@ int rear = -1;
 		printf("%d", queue[front]);
 		front = (front + 1)%N;
 	}
+ }
+
+ void display(){
+	int i;
+	if (front == -1 && rear== -1){
+		printf("Queue is empty");
+	}else{
+		printf("Queue is: ");
+		while(i != rear){
+			printf("%d", queue[i]);
+			i = (i+1) % N;
+		}
+		printf("%d", queue[rear]);
+	}
+ }
+
+ void peek(){
+	printf("%d", queue[front]);
  }
 

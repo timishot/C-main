@@ -4,7 +4,7 @@
 int queue[N];
 int front = -1;
 int rear = -1;
-
+//QUEUE IMPLEMENTATION USING ARRAY
 void enqueue(int x){
 	if (rear == N-1){
 		printf("overflow ");
