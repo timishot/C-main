@@ -59,14 +59,15 @@ int main(int argc, char *argv[]){
 		line_number++;
 
 		if (sscanf(line, "%s %d", opcode, &arg) == 2){
-			printf("%s %d", opcode, arg);
 			if (strcmp(opcode, "push") == 0){
 				push(arg);
-			}else if(strcmp(opcode, "pall") == 0){
-				pall();
 			} else {
 				fprintf(stderr, "L%d: Invalid instruction format: %s\n", line_number, line);
 				exit(EXIT_FAILURE);
+			}
+		}else if (sscanf(line, "%s", opcode) == 1){
+			if (strcmp(opcode, "pall") == 0){
+				pall();
 			}
 		}
 	}
