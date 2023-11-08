@@ -47,5 +47,7 @@ void pint();
 void pop();
 void swap();
 void add();
+void nop();
+void sub();
 
 #endif

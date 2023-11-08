@@ -43,6 +43,10 @@ int main(int argc, char *argv[]){
 				swap();
 			}else if(strcmp(opcode, "add") == 0){
 				add();
+			}else if(strcmp(opcode, "nop")== 0){
+				nop();
+			}else if(strcmp(opcode, "sub")== 0){
+				sub();
 			}
 		}
 	}
