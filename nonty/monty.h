@@ -44,5 +44,7 @@ typedef struct instruction_s
 void pall();
 void push(int x);
 void pint();
+void pop();
+void swap();
 
 #endif

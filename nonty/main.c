@@ -37,6 +37,10 @@ int main(int argc, char *argv[]){
 				pall();
 			}else if(strcmp(opcode, "pint")==0){
 				pint();
+			}else if(strcmp(opcode, "pop")==0){
+				pop();
+			}else if(strcmp(opcode, "swap")==0){
+				swap();
 			}
 		}
 	}
