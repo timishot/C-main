@@ -23,6 +23,7 @@ typedef struct stack_s
         struct stack_s *next;
 } stack_t;
 
+extern stack_t *top;
 
 /**
  * struct instruction_s - opcode and its function
@@ -37,5 +38,11 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+
+
+void pall();
+void push(int x);
+void pint();
 
 #endif
