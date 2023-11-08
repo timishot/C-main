@@ -41,6 +41,8 @@ int main(int argc, char *argv[]){
 				pop();
 			}else if(strcmp(opcode, "swap")==0){
 				swap();
+			}else if(strcmp(opcode, "add") == 0){
+				add();
 			}
 		}
 	}
