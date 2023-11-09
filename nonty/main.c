@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
     		return EXIT_FAILURE;
 	}
 	file = fopen(argv[1], "r");
-	line_number = 0;
+	line_number = 1;
 
 	if (file==NULL){
 		perror("Unable to open file");
@@ -47,6 +47,10 @@ int main(int argc, char *argv[]){
 				nop();
 			}else if(strcmp(opcode, "sub")== 0){
 				sub();
+			}else if(strcmp(opcode, "div1")== 0){
+				div1();
+			}else if(strcmp(opcode, "mul")==0){
+				mul();
 			}
 		}
 	}

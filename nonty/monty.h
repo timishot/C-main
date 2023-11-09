@@ -24,6 +24,7 @@ typedef struct stack_s
 } stack_t;
 
 extern stack_t *top;
+extern int line_number;
 
 /**
  * struct instruction_s - opcode and its function
@@ -49,5 +50,7 @@ void swap();
 void add();
 void nop();
 void sub();
+void div1();
+void mul();
 
 #endif
