@@ -51,6 +51,8 @@ int main(int argc, char *argv[]){
 				div1();
 			}else if(strcmp(opcode, "mul")==0){
 				mul();
+			}else if(strcmp(opcode, "mod")==0){
+				mod();
 			}
 		}
 	}

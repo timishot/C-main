@@ -1,7 +1,7 @@
 #include "monty.h"
 
 
-void mul()
+void mod()
 {
 	if (top == NULL || top->next == NULL){
 		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
@@ -15,6 +15,7 @@ void mul()
 	pop(top->next);
 
 
-	int result = num1 * num2;
+	int result = num1 % num2;
+	printf("this na me :%d\n", result);
 	push(result);
 }
