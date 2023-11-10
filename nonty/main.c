@@ -53,6 +53,8 @@ int main(int argc, char *argv[]){
 				mul();
 			}else if(strcmp(opcode, "mod")==0){
 				mod();
+			}else if (strcmp(opcode, "pchar")==0){
+				pchar();
 			}
 		}
 	}

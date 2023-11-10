@@ -53,5 +53,6 @@ void sub();
 void div1();
 void mul();
 void mod();
+void pchar();
 
 #endif
