@@ -55,5 +55,6 @@ void mul();
 void mod();
 void pchar();
 void pstr();
+void rot1();
 
 #endif

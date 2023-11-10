@@ -57,6 +57,8 @@ int main(int argc, char *argv[]){
 				pchar();
 			}else if(strcmp(opcode, "pstr")==0){
 				pstr();
+			}else if(strcmp(opcode, "rotl")==0){
+				rot1();
 			}
 		}
 	}
