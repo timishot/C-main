@@ -54,5 +54,6 @@ void div1();
 void mul();
 void mod();
 void pchar();
+void pstr();
 
 #endif

@@ -55,6 +55,8 @@ int main(int argc, char *argv[]){
 				mod();
 			}else if (strcmp(opcode, "pchar")==0){
 				pchar();
+			}else if(strcmp(opcode, "pstr")==0){
+				pstr();
 			}
 		}
 	}
