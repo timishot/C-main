@@ -16,6 +16,7 @@ void swap(int *xp, int *yp){
  * bubble_sort - function that sorts an array of integers in ascending oider
  * @array: the element to sorted
  * @size: the size the array
+ * Return -None
  */
 
 
